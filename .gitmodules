@@ -6,3 +6,11 @@
 	path = moodle/local/staticpage
 	url = https://github.com/moodleuulm/moodle-local_staticpage.git
 	branch = master
+[submodule "moodle/local/mail"]
+	path = moodle/local/mail
+	url = https://gitlab.com/reskity/moodle-local_mail.git
+	branch = master
+[submodule "moodle/local/sandbox"]
+	path = moodle/local/sandbox
+	url = https://github.com/moodleuulm/moodle-local_sandbox.git
+	branch = master
