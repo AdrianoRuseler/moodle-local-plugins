@@ -30,6 +30,13 @@ git submodule add -b master https://github.com/moodleuulm/moodle-local_staticpag
 git submodule add -b master https://gitlab.com/reskity/moodle-local_mail.git local/mail
 ```
 
+- https://moodle.org/plugins/local_sandbox
+- https://github.com/moodleuulm/moodle-local_sandbox
+```bash
+git submodule add -b master https://github.com/moodleuulm/moodle-local_sandbox.git local/sandbox
+```
+
+
 ## Remove
 ```bash
 git submodule deinit <path_to_submodule>
