@@ -2,3 +2,7 @@
 	path = moodle/local/adminer
 	url = https://github.com/grabs/moodle-local_adminer.git
 	branch = MOODLE_39_STABLE
+[submodule "moodle/local/staticpage"]
+	path = moodle/local/staticpage
+	url = https://github.com/moodleuulm/moodle-local_staticpage.git
+	branch = master
