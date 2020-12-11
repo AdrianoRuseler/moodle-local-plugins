@@ -1,0 +1,4 @@
+[submodule "moodle/local/adminer"]
+	path = moodle/local/adminer
+	url = https://github.com/grabs/moodle-local_adminer.git
+	branch = MOODLE_39_STABLE
