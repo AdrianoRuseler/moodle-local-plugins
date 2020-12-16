@@ -2,6 +2,15 @@
 
 TITLE Moodle Backup
 
+echo Server must be running...
+tasklist | findstr http
+if errorlevel 1 goto :exit
+
+tasklist | findstr mysql
+if errorlevel 1 goto :exit
+
+echo Server is running!!
+
 ECHO Create Backup Directory
 mkdir backups\site
 
@@ -35,3 +44,11 @@ echo Disable maintenance mode...
 C:\moodle-local\server\php\php.exe server\moodle\admin\cli\maintenance.php --disable
 
 pause
+
+goto :end
+
+:exit
+
+echo BACKUP ERROR!
+pause
+:end

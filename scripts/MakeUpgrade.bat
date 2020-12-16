@@ -2,6 +2,15 @@
 
 TITLE Moodle Upgrade
 
+echo Server must be running...
+tasklist | findstr http
+if errorlevel 1 goto :exit
+
+tasklist | findstr mysql
+if errorlevel 1 goto :exit
+
+echo Server is running!!
+
 echo Kill all sessions...
 C:\moodle-local\server\php\php.exe server\moodle\admin\cli\kill_all_sessions.php
 
@@ -42,3 +51,12 @@ rmdir /s /q C:\moodle-local\server\moodle-bkp
 rmdir /s /q C:\moodle-local\backups\mdltmp
 
 pause
+
+goto :end
+
+:exit
+
+echo UPGRADE ERROR!
+pause
+:end
+
