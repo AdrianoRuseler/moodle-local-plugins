@@ -86,3 +86,7 @@
 	path = moodle/availability/condition/ipaddress
 	url = https://github.com/MFreakNL/moodle-availability_ipaddress.git
 	branch = master
+[submodule "moodle/mod/jitsi"]
+	path = moodle/mod/jitsi
+	url = https://github.com/udima-university/moodle-mod_jitsi.git
+	branch = master
