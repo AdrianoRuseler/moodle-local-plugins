@@ -74,3 +74,7 @@
 	path = moodle/blocks/configurable_reports
 	url = https://github.com/jleyva/moodle-block_configurablereports.git
 	branch = MOODLE_36_STABLE
+[submodule "moodle/mod/scheduler"]
+	path = moodle/mod/scheduler
+	url = https://github.com/bostelm/moodle-mod_scheduler.git
+	branch = master
