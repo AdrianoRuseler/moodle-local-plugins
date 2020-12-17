@@ -82,3 +82,7 @@
 	path = moodle/lib/editor/atto/plugins/fullscreen
 	url = https://github.com/dthies/moodle-atto_fullscreen.git
 	branch = master
+[submodule "moodle/availability/condition/ipaddress"]
+	path = moodle/availability/condition/ipaddress
+	url = https://github.com/MFreakNL/moodle-availability_ipaddress.git
+	branch = master
