@@ -90,3 +90,11 @@
 	path = moodle/mod/jitsi
 	url = https://github.com/udima-university/moodle-mod_jitsi.git
 	branch = master
+[submodule "moodle/mod/vpl"]
+	path = moodle/mod/vpl
+	url = https://github.com/jcrodriguez-dis/moodle-mod_vpl.git
+	branch = v3.3.8
+[submodule "moodle/question/type/ordering"]
+	path = moodle/question/type/ordering
+	url = https://github.com/gbateson/moodle-qtype_ordering.git
+	branch = master
