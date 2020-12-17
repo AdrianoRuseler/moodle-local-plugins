@@ -58,3 +58,7 @@
 	path = moodle/report/benchmark
 	url = https://github.com/mikasmart/moodle-report_benchmark.git
 	branch = master
+[submodule "moodle/blocks/dedication"]
+	path = moodle/blocks/dedication
+	url = https://bitbucket.org/ciceidev/moodle_block_dedication.git
+	branch = MOODLE_30_STABLE
