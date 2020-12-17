@@ -122,3 +122,7 @@
 	path = moodle/lib/editor/atto/plugins/cloze
 	url = https://github.com/dthies/moodle-atto_cloze.git
 	branch = master
+[submodule "moodle/course/format/buttons"]
+	path = moodle/course/format/buttons
+	url = https://github.com/brandaorodrigo/moodle-format_buttons.git
+	branch = master
