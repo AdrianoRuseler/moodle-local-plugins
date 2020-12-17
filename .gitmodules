@@ -138,3 +138,7 @@
 	path = moodle/lib/editor/atto/plugins/justify
 	url = https://github.com/moodle-ead/atto_justify.git
 	branch = master
+[submodule "moodle/course/format/tiles"]
+	path = moodle/course/format/tiles
+	url = https://bitbucket.org/dw8/moodle-format_tiles.git
+	branch = master
