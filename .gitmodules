@@ -34,3 +34,11 @@
 	path = moodle/mod/choicegroup
 	url = https://github.com/ndunand/moodle-mod_choicegroup.git
 	branch = master
+[submodule "moodle/mod/studentquiz"]
+	path = moodle/mod/studentquiz
+	url = https://github.com/frankkoch/moodle-mod_studentquiz.git
+	branch = master
+[submodule "moodle/admin/tool/coursearchiver"]
+	path = moodle/admin/tool/coursearchiver
+	url = https://github.com/Syxton/moodle-tool_coursearchiver.git
+	branch = master
