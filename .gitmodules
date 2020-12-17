@@ -70,3 +70,7 @@
 	path = moodle/mod/publication
 	url = https://github.com/academic-moodle-cooperation/moodle-mod_publication.git
 	branch = MOODLE_310_STABLE
+[submodule "moodle/blocks/configurable_reports"]
+	path = moodle/blocks/configurable_reports
+	url = https://github.com/jleyva/moodle-block_configurablereports.git
+	branch = MOODLE_36_STABLE
