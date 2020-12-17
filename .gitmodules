@@ -50,3 +50,7 @@
 	path = moodle/mod/checklist
 	url = https://github.com/davosmith/moodle-checklist.git
 	branch = master
+[submodule "moodle/mod/customcert"]
+	path = moodle/mod/customcert
+	url = https://github.com/markn86/moodle-mod_customcert.git
+	branch = MOODLE_310_STABLE
