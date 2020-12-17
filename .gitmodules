@@ -118,3 +118,7 @@
 	path = moodle/question/type/oumultiresponse
 	url = https://github.com/moodleou/moodle-qtype_oumultiresponse.git
 	branch = master
+[submodule "moodle/lib/editor/atto/plugins/cloze"]
+	path = moodle/lib/editor/atto/plugins/cloze
+	url = https://github.com/dthies/moodle-atto_cloze.git
+	branch = master
