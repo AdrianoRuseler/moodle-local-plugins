@@ -1,7 +1,6 @@
 # moodle-local-plugins
 
 ## moodle-local.7z
-- https://drive.google.com/file/d/1LeiE-jQOxSnSdpk5TYm3qC1jfx3-s-4a
 - https://drive.google.com/file/d/1LeiE-jQOxSnSdpk5TYm3qC1jfx3-s-4a/view?usp=sharing
 
 ## Plugins List
