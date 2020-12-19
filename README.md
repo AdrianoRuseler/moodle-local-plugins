@@ -2,7 +2,7 @@
 
 ## moodle-local.7z
 - https://drive.google.com/file/d/1LeiE-jQOxSnSdpk5TYm3qC1jfx3-s-4a/view?usp=sharing
-- https://www.youtube.com/embed/a58lWw1jYG0
+- https://youtu.be/a58lWw1jYG0
 
 ## Plugins List
 
