@@ -23,6 +23,9 @@ $defaults['moodle']['auth_instructions'] = 'admin / fSt@8nNV';
 $defaults['moodle']['pathtophp'] = 'C:\moodle-local\server\php\php.exe';
 $defaults['moodle']['pathtogs'] = 'C:\moodle-local\server\gs\bin\gswin64c.exe';
 $defaults['moodle']['pathtopython'] = 'C:\moodle-local\server\python\python.exe';
+$defaults['moodle']['pathtodot'] = 'C:\moodle-local\server\Graphviz\bin\dot.exe';
+$defaults['moodle']['pathtodu'] = 'C:\moodle-local\server\du\du.exe';
+
 $defaults['moodle']['pathtounoconv'] = 'C:\moodle-local\server\unoconv\unoconv.bat';
 
 
