@@ -3,11 +3,6 @@
 $defaults['moodle']['timezone'] = 'America/Sao_Paulo';
 $defaults['moodle']['defaultcity'] = 'Curitiba';
 
-$defaults['moodle']['allowuserthemes'] = 'yes';
-$defaults['moodle']['allowcoursethemes'] = 'yes';
-$defaults['moodle']['allowcategorythemes'] = 'yes';
-$defaults['moodle']['allowthemechangeonurl'] = 'yes';
-
 $defaults['moodle']['cronclionly'] = 'no';
 $defaults['moodle']['cronremotepassword'] = 'up7zEp2xHN99wbQk';
 
