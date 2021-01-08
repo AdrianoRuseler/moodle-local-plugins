@@ -114,10 +114,6 @@
 	path = moodle/mod/hvp
 	url = https://github.com/h5p/h5p-moodle-plugin.git
 	branch = stable
-[submodule "moodle/question/type/oumultiresponse"]
-	path = moodle/question/type/oumultiresponse
-	url = https://github.com/moodleou/moodle-qtype_oumultiresponse.git
-	branch = master
 [submodule "moodle/lib/editor/atto/plugins/cloze"]
 	path = moodle/lib/editor/atto/plugins/cloze
 	url = https://github.com/dthies/moodle-atto_cloze.git
