@@ -2,6 +2,28 @@
 
 TITLE Moodle Backup
 
+echo Set script variables...
+SET BASEDIR=C:\moodle-local
+echo BASEDIR folder: %BASEDIR%
+
+SET SVRDIR=%BASEDIR%\server
+echo Server folder: %SVRDIR%
+
+SET BKPDIR=%BASEDIR%\backups
+echo BKPDIR folder: %BKPDIR%
+
+SET TOOLS=%BASEDIR%\tools
+echo Tools folder: %TOOLS%
+
+SET ZIP=%BASEDIR%\tools\7z\7z.exe
+echo 7z Location: %ZIP%
+
+SET PHP=%SVRDIR%\php\php.exe 
+echo PHP Location: %PHP%
+
+SET ADMCLI=%SVRDIR%\moodle\admin\cli
+echo ADMCLI Location: %ADMCLI%
+
 echo Server must be running...
 tasklist | findstr http
 if errorlevel 1 goto :exit
@@ -12,36 +34,38 @@ if errorlevel 1 goto :exit
 echo Server is running!!
 
 ECHO Create Backup Directory
-mkdir backups\site
+mkdir %BKPDIR%\site
 
 echo Kill all sessions...
-C:\moodle-local\server\php\php.exe server\moodle\admin\cli\kill_all_sessions.php
+%PHP% %ADMCLI%\kill_all_sessions.php
 
 echo Enable maintenance mode...
-C:\moodle-local\server\php\php.exe server\moodle\admin\cli\maintenance.php --enable
+%TOOLS%\wget.exe -O climaintenance.html https://raw.githubusercontent.com/AdrianoRuseler/moodle-local-plugins/main/climaintenance.html
+MOVE climaintenance.html %SVRDIR%\moodledata\
 
+:: %PHP% %ADMCLI%\maintenance.php --enable
 
 echo Purge Moodle cache...
-C:\moodle-local\server\php\php.exe server\moodle\admin\cli\purge_caches.php
+%PHP% %ADMCLI%\purge_caches.php
 
 echo Fix courses...
-C:\moodle-local\server\php\php.exe server\moodle\admin\cli\fix_course_sequence.php -c=* --fix
+%PHP% %ADMCLI%\fix_course_sequence.php -c=* --fix
 
 echo Zip folders...
-cd backups\site
-C:\moodle-local\tools\7z\7z.exe a -t7z moodledata.7z C:\moodle-local\server\moodledata\
-C:\moodle-local\tools\7z\7z.exe a -t7z moodlecore.7z C:\moodle-local\server\moodle\
+cd %BKPDIR%\site
+%ZIP% a -t7z moodledata.7z %SVRDIR%\moodledata\
+%ZIP% a -t7z moodlecore.7z %SVRDIR%\moodle\
 
 echo Dump database...
-C:\moodle-local\server\mysql\bin\mysqldump.exe -u root -C -Q -e --create-options moodle > mdldbdump.sql
-C:\moodle-local\tools\7z\7z.exe a -t7z mdldbdump.sql.7z mdldbdump.sql
+%SVRDIR%\mysql\bin\mysqldump.exe -u root -C -Q -e --create-options moodle > mdldbdump.sql
+%ZIP% a -t7z mdldbdump.sql.7z mdldbdump.sql
 DEL mdldbdump.sql
 
-:: CP C:\moodle-local\server\moodle\config.php config.php
+:: CP %SVRDIR%\moodle\config.php config.php
 
-cd C:\moodle-local
+:: cd C:\moodle-local
 echo Disable maintenance mode...
-C:\moodle-local\server\php\php.exe server\moodle\admin\cli\maintenance.php --disable
+%PHP% %ADMCLI%\maintenance.php --disable
 
 pause
 
