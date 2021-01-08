@@ -98,10 +98,6 @@
 	path = moodle/question/type/ordering
 	url = https://github.com/gbateson/moodle-qtype_ordering.git
 	branch = master
-[submodule "moodle/question/type/combined"]
-	path = moodle/question/type/combined
-	url = https://github.com/moodleou/moodle-qtype_combined.git
-	branch = master
 [submodule "moodle/question/type/coderunner"]
 	path = moodle/question/type/coderunner
 	url = https://github.com/trampgeek/moodle-qtype_coderunner.git
