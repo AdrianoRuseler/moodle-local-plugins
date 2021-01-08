@@ -138,3 +138,7 @@
 	path = moodle/course/format/tiles
 	url = https://bitbucket.org/dw8/moodle-format_tiles.git
 	branch = master
+[submodule "moodle/question/type/oumultiresponse"]
+	path = moodle/question/type/oumultiresponse
+	url = https://github.com/moodleou/moodle-qtype_oumultiresponse.git
+	branch = main
