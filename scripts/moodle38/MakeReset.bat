@@ -56,7 +56,7 @@ MOVE %SVRDIR%\moodledata-bkp\lang %SVRDIR%\moodledata\lang
 rmdir /s /q %SVRDIR%\moodledata-bkp
 
 echo Install Moodle...
-%PHP% %ADMCLI%\install.php --dbtype=mariadb --wwwroot="https://moodle.local"  --fullname="Moodle Local" --shortname="Moodle Local" --adminpass=K$n9q5Tg --adminemail=admin@moodle.local --non-interactive --agree-license
+%PHP% %ADMCLI%\install.php --dbtype=mariadb --wwwroot="https://moodle.local"  --fullname="Moodle Local" --shortname="Moodle 3.8+" --adminpass=K$n9q5Tg --adminemail=admin@moodle.local --non-interactive --agree-license
 
 echo Disable maintenance mode...
 %PHP% %ADMCLI%\maintenance.php --disable
@@ -68,16 +68,16 @@ echo Build theme cache...
 echo Set configurations...
 %PHP% %ADMCLI%\cfg.php --name=theme --set=classic
 
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=allowuserthemes --set=1
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=allowcoursethemes --set=1
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=allowcategorythemes --set=1
-::C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=allowcohortthemes --set=1
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=downloadcoursecontentallowed --set=1
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=allowthemechangeonurl --set=1
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\cfg.php --name=lang --set=pt_br
+%PHP% %ADMCLI%\cfg.php --name=allowuserthemes --set=1
+%PHP% %ADMCLI%\cfg.php --name=allowcoursethemes --set=1
+%PHP% %ADMCLI%\cfg.php --name=allowcategorythemes --set=1
+%PHP% %ADMCLI%\cfg.php --name=allowcohortthemes --set=1
+%PHP% %ADMCLI%\cfg.php --name=allowthemechangeonurl --set=1
+%PHP% %ADMCLI%\cfg.php --name=lang --set=pt_br
 
 :: echo Run task h5p_get_content_types_task...
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\tool\task\cli\schedule_task.php --execute="\core\task\h5p_get_content_types_task"
+:: %PHP% server\moodle\admin\tool\task\cli\schedule_task.php --execute="\core\task\h5p_get_content_types_task"
+:: %PHP% %ADMCLI%\cfg.php --name=downloadcoursecontentallowed --set=1
 
 pause
 echo SUCCESS!
