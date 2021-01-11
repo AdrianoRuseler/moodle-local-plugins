@@ -7,6 +7,7 @@ $defaults['moodle']['cronclionly'] = 'no';
 $defaults['moodle']['cronremotepassword'] = 'up7zEp2xHN99wbQk';
 
 $defaults['moodle']['custommenuitems'] = 'Tema
+-Adaptable | /?theme=adaptable
 -Boost | /?theme=boost
 -Classic | /?theme=classic
 Solicitação de curso | /course/request.php
@@ -20,5 +21,4 @@ $defaults['moodle']['pathtogs'] = 'C:\moodle38-local\server\gs\bin\gswin64c.exe'
 $defaults['moodle']['pathtopython'] = 'C:\moodle38-local\server\python\python.exe';
 $defaults['moodle']['pathtodot'] = 'C:\moodle38-local\server\Graphviz\bin\dot.exe';
 $defaults['moodle']['pathtodu'] = 'C:\moodle38-local\server\du\du.exe';
-
 $defaults['moodle']['pathtounoconv'] = 'C:\moodle38-local\server\unoconv\unoconv.bat';
