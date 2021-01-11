@@ -14,7 +14,7 @@ Solicitação de curso | /course/request.php
 Cron | /admin/cron.php?password=up7zEp2xHN99wbQk
 ';
 
-$defaults['moodle']['auth_instructions'] = 'admin / fSt@8nNV';
+$defaults['moodle']['auth_instructions'] = 'admin / K$n9q5Tg';
 
 $defaults['moodle']['pathtophp'] = 'C:\moodle38-local\server\php\php.exe';
 $defaults['moodle']['pathtogs'] = 'C:\moodle38-local\server\gs\bin\gswin64c.exe';
