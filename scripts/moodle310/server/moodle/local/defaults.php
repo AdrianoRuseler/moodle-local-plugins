@@ -7,7 +7,6 @@ $defaults['moodle']['cronclionly'] = 'no';
 $defaults['moodle']['cronremotepassword'] = 'up7zEp2xHN99wbQk';
 
 $defaults['moodle']['custommenuitems'] = 'Tema
--Adaptable | /?theme=adaptable
 -Boost | /?theme=boost
 -Classic | /?theme=classic
 Solicitação de curso | /course/request.php
