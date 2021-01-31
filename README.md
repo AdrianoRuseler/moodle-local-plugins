@@ -196,6 +196,10 @@ git submodule add -b master https://github.com/moodleuulm/moodle-local_staticpag
 git submodule add -b master https://github.com/moodleuulm/moodle-local_sandbox.git local/sandbox
 ```
 
+- https://moodle.org/plugins/availability_relativedate
+```bash
+git submodule add -b main https://github.com/ewallah/moodle-availability_relativedate.git availability/condition/relativedate
+```
 
 ## Remove
 ```bash
