@@ -6,6 +6,11 @@ https://wiki.refeds.org/display/STAN/SCHAC+Releases
 
 https://github.com/domarques/ldap-cafe-rnp
 
+https://wiki.rnp.br/display/cafewebsite/brEduPerson
+
+
+
+https://wiki.debian.org/LDAP/OpenLDAPSetup
 
 apt install schema2ldif
 
