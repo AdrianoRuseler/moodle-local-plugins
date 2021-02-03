@@ -1,0 +1,68 @@
+# Exemplo de arquivo ldif para o cadastro de pessoas
+# Setembro de 2008
+# Versao do esquema brEduPerson:  brEduPerson-20080917-0.0.6.schema
+# Silvana Rossetto - UFF (silvana@ic.uff.br)
+#------------------------------------------------------------
+
+# silvana, people.uff.br
+dn: uid=silvana,ou=people,dc=uff,dc=br
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: brPerson
+objectClass: schacPersonalCharacteristics
+uid: silvana
+brcpf: 12345678900
+brpassport: A23456
+schacCountryOfCitizenship: Brazil
+telephoneNumber: +55 22 81389199
+mail: ""
+homePostalAddress: ""
+cn: Silvana
+cn: Silvana Rossetto
+sn: Rossetto
+userPassword: silvana
+schacDateOfBirth:19000523
+schacGender: 2
+
+# 1, silvana.people.uff.br
+dn: braff=1,uid=silvana,ou=people,dc=uff,dc=br
+objectclass: brEduPerson
+braff: 1
+brafftype: faculty
+brEntranceDate: 20070205
+
+# 2, silvana.people.uff.br
+dn: braff=2,uid=silvana,ou=people,dc=uff,dc=br
+objectclass: brEduPerson
+braff: 2
+brafftype: faculty
+brEntranceDate: 20070205
+brExitDate: 20080330
+
+# 1, silvana.people.uff.br
+dn: brvoipphone=1,uid=silvana,ou=people,dc=uff,dc=br
+objectclass: brEduVoIP
+brvoipphone: 1
+brEduVoIPalias: 2345
+brEduVoIPtype: pstn
+brEduVoIPadmin: uid=administrador,ou=people,dc=uff,dc=br
+brEduVoIPcallforward: +55 22 3418 9199
+brEduVoIPaddress: 200.157.0.333
+brEduVoIPexpiryDate:  20081030
+brEduVoIPbalance: 295340
+brEduVoIPcredit: 300000
+
+# 2, silvana.people.uff.br
+dn: brvoipphone=2,uid=silvana,ou=people,dc=uff,dc=br
+objectclass: brEduVoIP
+brvoipphone: 2
+brvoipalias: 2346
+brEduVoIPtype: celular
+brEduVoIPadmin: uid=administrador,ou=people,dc=uff,dc=br
+
+# left-middle, silvana.people.uff.br
+dn: brbiosrc=left-middle,uid=silvana,ou=people,dc=uff,dc=br
+objectclass: brBiometricData
+brbiosrc: left-middle
+brBiometricData: ''
+brCaptureDate: 20001212
