@@ -18,3 +18,9 @@ schema2ldif < /usr/share/doc/<package>/<xyz>.schema > /tmp/<xyz>.ldif
 ldapadd -Q -Y EXTERNAL -H ldapi:/// -f /tmp/<xyz>.ldif 
 adding new entry "cn=<xyz>,cn=schema,cn=config"
   
+
+http://software.internet2.edu/eduperson/internet2-mace-dir-eduperson-201602.html
+
+## EduPerson
+
+## brEduPerson
