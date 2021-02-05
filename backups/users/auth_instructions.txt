@@ -10,3 +10,14 @@ teacher / Jh5$Qh$Q
 student / 7Aq64%TB
 user / 37U&tQVs
 
+
+<ul>
+    <li><i>admin / K$n9q5Tg</i></li>
+    <li><i>siteadmin / 3G$ny2D@</i></li>
+    <li><i>manager / XZy6W@P5</i></li>
+    <li><i>coursecreator / heJK%9dy</i></li>
+    <li><i>editingteacher / RM4E@d8X</i></li>
+    <li><i>teacher / Jh5$Qh$Q</i></li>
+    <li><i>student / 7Aq64%TB</i></li>
+    <li><i>user / 37U&amp;tQVs</i></li>
+</ul>
