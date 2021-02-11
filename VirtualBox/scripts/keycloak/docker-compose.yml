@@ -32,8 +32,5 @@ services:
         #JDBC_PARAMS: "ssl=true"
       ports:
         - 8080:8080
-      command:
-        #- Djboss.http.port=443
-        - Djboss.bind.address=0.0.0.0
       depends_on:
         - postgres
