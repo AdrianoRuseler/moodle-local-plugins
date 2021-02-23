@@ -146,3 +146,7 @@
 	path = moodle/availability/condition/relativedate
 	url = https://github.com/ewallah/moodle-availability_relativedate.git
 	branch = main
+[submodule "moodle/mod/geogebra"]
+	path = moodle/mod/geogebra
+	url = https://github.com/projectestac/moodle-mod_geogebra.git
+	branch = master
