@@ -9,6 +9,7 @@
  - https://moodle.org/plugins/atto_wiris
  - https://moodle.org/plugins/atto_wiris
  - https://moodle.org/plugins/tinymce_tiny_mce_wiris
+ - https://moodle.org/plugins/mod_geogebra
 
 ## Plugins List
 
