@@ -181,6 +181,11 @@ git submodule add -b master https://bitbucket.org/dw8/moodle-format_tiles.git co
 git submodule add -b master https://github.com/moodleou/moodle-qtype_combined.git question/type/combined
 ```
 
+- https://github.com/projectestac/moodle-mod_geogebra
+```bash
+git submodule add -b master https://github.com/projectestac/moodle-mod_geogebra.git mod/geogebra
+```
+
 
 - https://moodle.org/plugins/local_adminer
 - https://github.com/grabs/moodle-local_adminer
