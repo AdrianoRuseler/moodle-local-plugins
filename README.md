@@ -4,6 +4,12 @@
 - https://drive.google.com/file/d/1LeiE-jQOxSnSdpk5TYm3qC1jfx3-s-4a/view?usp=sharing
 - https://youtu.be/a58lWw1jYG0
 
+## To Do
+ - https://github.com/dbauer-ets/moodle-qtype_formulas
+ - https://moodle.org/plugins/atto_wiris
+ - https://moodle.org/plugins/atto_wiris
+ - https://moodle.org/plugins/tinymce_tiny_mce_wiris
+
 ## Plugins List
 
 ```bash
