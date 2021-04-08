@@ -150,3 +150,7 @@
 	path = moodle/mod/vpl
 	url = https://github.com/jcrodriguez-dis/moodle-mod_vpl.git
 	branch = v3.4.2
+[submodule "moodle/blocks/admin_presets"]
+	path = moodle/blocks/admin_presets
+	url = https://github.com/DigiDago/moodle-block_admin_presets.git
+	branch = MOODLE_310_STABLE
