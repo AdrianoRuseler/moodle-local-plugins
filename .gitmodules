@@ -102,10 +102,6 @@
 	path = moodle/question/behaviour/adaptive_adapted_for_coderunner
 	url = https://github.com/trampgeek/moodle-qbehaviour_adaptive_adapted_for_coderunner.git
 	branch = master
-[submodule "moodle/mod/hvp"]
-	path = moodle/mod/hvp
-	url = https://github.com/h5p/h5p-moodle-plugin.git
-	branch = stable
 [submodule "moodle/lib/editor/atto/plugins/cloze"]
 	path = moodle/lib/editor/atto/plugins/cloze
 	url = https://github.com/dthies/moodle-atto_cloze.git
