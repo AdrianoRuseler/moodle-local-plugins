@@ -150,3 +150,7 @@
 	path = moodle/blocks/admin_presets
 	url = https://github.com/DigiDago/moodle-block_admin_presets.git
 	branch = MOODLE_310_STABLE
+[submodule "moodle/mod/hvp"]
+	path = moodle/mod/hvp
+	url = https://github.com/h5p/h5p-moodle-plugin.git
+	branch = stable
