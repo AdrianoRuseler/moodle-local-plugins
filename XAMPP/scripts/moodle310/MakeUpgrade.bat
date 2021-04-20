@@ -24,6 +24,10 @@ echo PHP Location: %PHP%
 SET ADMCLI=%SVRDIR%\moodle\admin\cli
 echo ADMCLI Location: %ADMCLI%
 
+SET MDLCORE=https://download.moodle.org/download.php/direct/stable310/moodle-latest-310.zip
+::SET MDLCORE=https://download.moodle.org/download.php/direct/stable310/moodle-3.10.3.zip
+echo MDLCORE: %MDLCORE%
+
 echo Server must be running...
 tasklist | findstr http
 if errorlevel 1 goto :exit
@@ -38,7 +42,7 @@ echo Kill all sessions...
 
 echo Enable maintenance mode...
 :: %PHP% %ADMCLI%\maintenance.php --enable
-%TOOLS%\wget.exe -O climaintenance.html https://raw.githubusercontent.com/AdrianoRuseler/moodle-local-plugins/main/scripts/moodle310/server/climaintenance.html
+%TOOLS%\wget.exe -O climaintenance.html https://raw.githubusercontent.com/AdrianoRuseler/moodle-local-plugins/main/climaintenance.html
 MOVE climaintenance.html %SVRDIR%\moodledata\
 
 echo Create tmp folder..
@@ -46,7 +50,7 @@ mkdir %BKPDIR%\mdltmp
 cd %BKPDIR%\mdltmp
 
 ECHO Get Moodle core files...
-%TOOLS%\wget.exe -O moodle-latest-310.zip https://download.moodle.org/download.php/direct/stable310/moodle-latest-310.zip
+%TOOLS%\wget.exe -O moodle-latest-310.zip %MDLCORE%
 
 if not exist moodle-latest-310.zip goto :exit
 echo file moodle-latest-310.zip found...
@@ -58,7 +62,7 @@ if not exist moodle goto :exit
 echo folder moodle found...
 
 ECHO Get Moodle-local plugins...
-%TOOLS%\wget.exe -O moodle-plugins.7z https://github.com/AdrianoRuseler/moodle-local-plugins/raw/main/moodle.7z
+%TOOLS%\wget.exe -O moodle-plugins.7z https://github.com/AdrianoRuseler/moodle-local-plugins/raw/main/XAMPP/moodle.7z
 
 if not exist moodle-plugins.7z goto :exit
 echo file moodle-plugins.7z found...
@@ -69,7 +73,7 @@ MOVE %SVRDIR%\moodle %SVRDIR%\moodle-bkp
 MOVE %BKPDIR%\mdltmp\moodle %SVRDIR%\moodle
 
 ECHO Get defaults.php file...
-%TOOLS%\wget.exe -O %SVRDIR%\moodle\local\defaults.php https://raw.githubusercontent.com/AdrianoRuseler/moodle-local-plugins/main/scripts/moodle310/server/moodle/local/defaults.php
+%TOOLS%\wget.exe -O %SVRDIR%\moodle\local\defaults.php https://raw.githubusercontent.com/AdrianoRuseler/moodle-local-plugins/main/XAMPP/moodle/local/defaults.php
 
 echo Restore config.php file...
 COPY %SVRDIR%\moodle-bkp\config.php %SVRDIR%\moodle\config.php
