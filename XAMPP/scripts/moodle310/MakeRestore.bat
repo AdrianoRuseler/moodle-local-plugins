@@ -1,8 +1,27 @@
 @echo OFF
 
-TITLE Moodle Restore
+TITLE Moodle Restore!
+echo Set script variables...
 
-SET BKPDIR=C:\moodle38-local\backups\site
+SET BASEDIR=C:\moodle-local
+echo BASEDIR folder: %BASEDIR%
+
+SET SVRDIR=%BASEDIR%\server
+echo Server folder: %SVRDIR%
+
+SET TOOLS=%BASEDIR%\tools
+echo Tools folder: %TOOLS%
+
+SET ZIP=%BASEDIR%\tools\7z\7z.exe
+echo 7z Location: %ZIP%
+
+SET PHP=%SVRDIR%\php\php.exe 
+echo PHP Location: %PHP%
+
+SET ADMCLI=%SVRDIR%\moodle\admin\cli
+echo ADMCLI Location: %ADMCLI%
+
+SET BKPDIR=%BASEDIR%\backups\site
 echo Backup folder: %BKPDIR%
 
 echo Looking for files to restore...
@@ -28,56 +47,51 @@ if errorlevel 1 goto :exit
 
 echo Server is running!!
 
-cd C:\moodle38-local
-
 echo Kill all sessions...
-C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\kill_all_sessions.php
+%PHP% %ADMCLI%\kill_all_sessions.php
 
 echo Enable maintenance mode...
-:: C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\maintenance.php --enable
-C:\moodle38-local\tools\wget.exe -O climaintenance.html https://raw.githubusercontent.com/AdrianoRuseler/moodle38-plugins/master/climaintenance.html
-MOVE climaintenance.html C:\moodle38-local\server\moodledata\
+:: %PHP% %ADMCLI%\maintenance.php --enable
+%TOOLS%\wget.exe -O climaintenance.html https://raw.githubusercontent.com/AdrianoRuseler/moodle-local-plugins/main/climaintenance.html
+MOVE climaintenance.html %SVRDIR%\moodledata\
 
 echo Move moodledata...
-MOVE C:\moodle38-local\server\moodledata C:\moodle38-local\server\moodledata-bkp
+MOVE %SVRDIR%\moodledata %SVRDIR%\moodledata-bkp
 
 cd %BKPDIR%
-C:\moodle38-local\tools\7z\7z.exe x moodledata.7z
-MOVE moodledata C:\moodle38-local\server\moodledata
+%ZIP% x moodledata.7z
+MOVE moodledata %SVRDIR%\moodledata
 
 echo Extract mdldbdump.sql.7z...
-C:\moodle38-local\tools\7z\7z.exe x mdldbdump.sql.7z
+%ZIP% x mdldbdump.sql.7z
 
 :: echo Drop moodle database...
-:: C:\moodle38-local\server\mysql\bin\mysqladmin.exe -f -u root drop moodle
+:: %SVRDIR%\mysql\bin\mysqladmin.exe -f -u root drop moodle
 
 echo Restore mdldbdump.sql...
-C:\moodle38-local\server\mysql\bin\mysql.exe -u root moodle < mdldbdump.sql
+%SVRDIR%\mysql\bin\mysql.exe -u root moodle < mdldbdump.sql
 
 echo Move moodle folder...
-MOVE C:\moodle38-local\server\moodle C:\moodle38-local\server\moodle-bkp
+MOVE %SVRDIR%\moodle %SVRDIR%\moodle-bkp
 
 echo Restore Moodle folder...
-C:\moodle38-local\tools\7z\7z.exe x moodlecore.7z
-MOVE moodle C:\moodle38-local\server\moodle
+%ZIP% x moodlecore.7z
+MOVE moodle %SVRDIR%\moodle
 
 echo Run moodle cli upgrade...
-cd C:\moodle38-local
-C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\upgrade.php --non-interactive
+%PHP% %ADMCLI%\upgrade.php --non-interactive
 
-
-cd C:\moodle38-local
 echo "Disable maintenance mode..."
-C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\maintenance.php --disable
+%PHP% %ADMCLI%\maintenance.php --disable
 
 echo Delete tmp files...
-rmdir /s /q C:\moodle38-local\server\moodle-bkp
-rmdir /s /q C:\moodle38-local\server\moodledata-bkp
-DEL C:\moodle38-local\backups\site\mdldbdump.sql
+rmdir /s /q %SVRDIR%\moodle-bkp
+rmdir /s /q %SVRDIR%\moodledata-bkp
+DEL %BKPDIR%\mdldbdump.sql
 
-echo Build theme cache...
-C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\build_theme_css.php --themes=boost
-C:\moodle38-local\server\php\php.exe server\moodle\admin\cli\build_theme_css.php --themes=classic
+:: echo Build theme cache...
+:: %PHP% %ADMCLI%\build_theme_css.php --themes=boost
+:: %PHP% %ADMCLI%\build_theme_css.php --themes=clean
 
 
 pause
