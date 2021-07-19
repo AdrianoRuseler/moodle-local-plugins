@@ -154,3 +154,7 @@
 	path = moodle/mod/vpl
 	url = https://github.com/jcrodriguez-dis/moodle-mod_vpl.git
 	branch = V3.4.3+
+[submodule "moodle/blocks/sharing_cart"]
+	path = moodle/blocks/sharing_cart
+	url = https://github.com/donhinkelman/moodle-block_sharing_cart.git
+	branch = MOODLE_310_STABLE
