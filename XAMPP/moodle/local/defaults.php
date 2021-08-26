@@ -12,6 +12,7 @@ $defaults['moodle']['custommenuitems'] = 'Tema
 Solicitação de curso | /course/request.php
 Cron | /admin/cron.php?password=up7zEp2xHN99wbQk
 ';
+// allowthemechangeonurl
 
 $defaults['moodle']['auth_instructions'] = 'admin / fSt@8nNV';
 
