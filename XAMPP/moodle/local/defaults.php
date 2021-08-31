@@ -11,8 +11,11 @@ $defaults['moodle']['custommenuitems'] = 'Tema
 -Clássico | /?theme=classic
 Solicitação de curso | /course/request.php
 Cron | /admin/cron.php?password=up7zEp2xHN99wbQk
+// MailTrap | https://mailtrap.io/inboxes
 ';
 // allowthemechangeonurl
+
+
 
 $defaults['moodle']['auth_instructions'] = 'admin / fSt@8nNV';
 
