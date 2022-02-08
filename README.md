@@ -17,7 +17,7 @@ cd moodle
 
 - https://github.com/danmarsden/moodle-mod_attendance/
 ```bash
-git submodule add -b MOODLE_38_STABLE https://github.com/danmarsden/moodle-mod_attendance.git mod/attendance
+git submodule add -b MOODLE_311_STABLE https://github.com/danmarsden/moodle-mod_attendance.git mod/attendance
 ```
 
 - https://github.com/h5p/h5p-moodle-plugin
