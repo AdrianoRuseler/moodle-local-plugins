@@ -150,3 +150,7 @@
 	path = moodle/mod/customcert
 	url = https://github.com/markn86/moodle-mod_customcert.git
 	branch = MOODLE_311_STABLE
+[submodule "moodle/mod/vpl"]
+	path = moodle/mod/vpl
+	url = https://github.com/jcrodriguez-dis/moodle-mod_vpl.git
+	branch = V3.4.3+
