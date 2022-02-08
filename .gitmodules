@@ -150,3 +150,7 @@
 	path = moodle/local/sandbox
 	url = https://github.com/moodleuulm/moodle-local_sandbox.git
 	branch = MOODLE_311_STABLE
+[submodule "moodle/blocks/admin_presets"]
+	path = moodle/blocks/admin_presets
+	url = https://github.com/DigiDago/moodle-block_admin_presets.git
+	branch = MOODLE_311_STABLE
