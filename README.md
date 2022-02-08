@@ -143,7 +143,7 @@ git submodule add -b main https://github.com/mudrd8mz/moodle-mod_subcourse.git m
 ```
 - https://github.com/jcrodriguez-dis/moodle-mod_vpl
 ```bash
-git submodule add -b v3.3.8 https://github.com/jcrodriguez-dis/moodle-mod_vpl.git mod/vpl
+git submodule add -b v3.4.3 https://github.com/jcrodriguez-dis/moodle-mod_vpl.git mod/vpl
 ```
 
 - https://github.com/academic-moodle-cooperation/moodle-mod_publication
