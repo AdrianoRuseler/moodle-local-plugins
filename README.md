@@ -113,7 +113,7 @@ git submodule add -b master https://github.com/davosmith/moodle-checklist.git mo
 ```
 - https://github.com/markn86/moodle-mod_customcert
 ```bash
-git submodule add -b MOODLE_310_STABLE https://github.com/markn86/moodle-mod_customcert.git mod/customcert
+git submodule add -b MOODLE_311_STABLE https://github.com/markn86/moodle-mod_customcert.git mod/customcert
 ```
 
 - https://github.com/brandaorodrigo/moodle-format_buttons
