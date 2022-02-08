@@ -139,7 +139,7 @@ git submodule add -b MOODLE_30_STABLE https://bitbucket.org/ciceidev/moodle_bloc
 
 - https://github.com/mudrd8mz/moodle-mod_subcourse
 ```bash
-git submodule add -b master https://github.com/mudrd8mz/moodle-mod_subcourse.git mod/subcourse
+git submodule add -b main https://github.com/mudrd8mz/moodle-mod_subcourse.git mod/subcourse
 ```
 - https://github.com/jcrodriguez-dis/moodle-mod_vpl
 ```bash
