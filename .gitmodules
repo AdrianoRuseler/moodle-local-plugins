@@ -154,3 +154,7 @@
 	path = moodle/mod/bigbluebuttonbn
 	url = https://github.com/blindsidenetworks/moodle-mod_bigbluebuttonbn.git
 	branch = v2.4-stable
+[submodule "moodle/question/type/oumultiresponse"]
+	path = moodle/question/type/oumultiresponse
+	url = https://github.com/moodleou/moodle-qtype_oumultiresponse.git
+	branch = main
