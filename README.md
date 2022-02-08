@@ -219,6 +219,22 @@ git commit -m "Removed submodule "
 rm -rf .git/modules/<path_to_submodule>
 ```
 
+```bash
+SUBMPATH="moodle/path/to/submodule"
+git submodule deinit $SUBMPATH
+git rm $SUBMPATH
+git commit -m "Removed submodule $SUBMPATH"
+rm -rf .git/modules/$SUBMPATH
+git push
+```
+
+```bash
+git submodule add -b branch https://urltoplugin.git path/to/submodule
+git add .
+git commit -m "Some update info here..."
+git push
+```
+
 - https://moodle.org/plugins/local_mail
 - https://gitlab.com/reskity/moodle-local_mail
 
