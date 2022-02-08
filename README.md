@@ -17,7 +17,7 @@ cd moodle
 
 - https://github.com/danmarsden/moodle-mod_attendance/
 ```bash
-git submodule add -b main https://github.com/danmarsden/moodle-mod_attendance.git mod/attendance
+git submodule add -b MOODLE_38_STABLE https://github.com/danmarsden/moodle-mod_attendance.git mod/attendance
 ```
 
 - https://github.com/h5p/h5p-moodle-plugin
@@ -29,7 +29,7 @@ git submodule update --init
 
 - https://github.com/blindsidenetworks/moodle-mod_bigbluebuttonbn
 ```bash
-git submodule add -b v2.3-stable https://github.com/blindsidenetworks/moodle-mod_bigbluebuttonbn.git mod/bigbluebuttonbn
+git submodule add -b v2.4-stable https://github.com/blindsidenetworks/moodle-mod_bigbluebuttonbn.git mod/bigbluebuttonbn
 ```
 
 - https://github.com/trampgeek/moodle-qtype_coderunner
