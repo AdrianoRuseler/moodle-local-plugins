@@ -191,14 +191,6 @@ git submodule add -b master https://github.com/projectestac/moodle-mod_geogebra.
 git submodule add -b MOODLE_39_STABLE https://github.com/grabs/moodle-local_adminer.git local/adminer
 ```
 
-- https://moodle.org/plugins/local_staticpage
-- https://github.com/moodleuulm/moodle-local_staticpage
-
-```bash
-git submodule add -b master https://github.com/moodleuulm/moodle-local_staticpage.git local/staticpage
-```
-
-
 - https://moodle.org/plugins/local_sandbox
 - https://github.com/moodleuulm/moodle-local_sandbox
 ```bash
