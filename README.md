@@ -204,7 +204,7 @@ git submodule add -b main https://github.com/ewallah/moodle-availability_relativ
 ```
 - https://github.com/DigiDago/moodle-block_admin_presets
 ```bash
-git submodule add -b MOODLE_310_STABLE https://github.com/DigiDago/moodle-block_admin_presets.git blocks/admin_presets
+git submodule add -b MOODLE_311_STABLE https://github.com/DigiDago/moodle-block_admin_presets.git blocks/admin_presets
 ```
 - https://github.com/donhinkelman/moodle-block_sharing_cart
 ```bash
