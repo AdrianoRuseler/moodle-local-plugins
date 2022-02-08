@@ -154,3 +154,7 @@
 	path = moodle/question/type/oumultiresponse
 	url = https://github.com/moodleou/moodle-qtype_oumultiresponse.git
 	branch = main
+[submodule "moodle/mod/subcourse"]
+	path = moodle/mod/subcourse
+	url = https://github.com/mudrd8mz/moodle-mod_subcourse.git
+	branch = main
