@@ -194,7 +194,7 @@ git submodule add -b MOODLE_39_STABLE https://github.com/grabs/moodle-local_admi
 - https://moodle.org/plugins/local_sandbox
 - https://github.com/moodleuulm/moodle-local_sandbox
 ```bash
-git submodule add -b master https://github.com/moodleuulm/moodle-local_sandbox.git local/sandbox
+git submodule add -b MOODLE_310_STABLE https://github.com/moodleuulm/moodle-local_sandbox.git local/sandbox
 ```
 
 - https://moodle.org/plugins/availability_relativedate
