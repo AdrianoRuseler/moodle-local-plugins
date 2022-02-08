@@ -138,10 +138,6 @@
 	path = moodle/blocks/admin_presets
 	url = https://github.com/DigiDago/moodle-block_admin_presets.git
 	branch = MOODLE_310_STABLE
-[submodule "moodle/mod/bigbluebuttonbn"]
-	path = moodle/mod/bigbluebuttonbn
-	url = https://github.com/blindsidenetworks/moodle-mod_bigbluebuttonbn.git
-	branch = v2.4-stable
 [submodule "moodle/mod/hvp"]
 	path = moodle/mod/hvp
 	url = https://github.com/h5p/h5p-moodle-plugin.git
@@ -154,3 +150,7 @@
 	path = moodle/blocks/sharing_cart
 	url = https://github.com/donhinkelman/moodle-block_sharing_cart.git
 	branch = MOODLE_310_STABLE
+[submodule "moodle/mod/attendance"]
+	path = moodle/mod/attendance
+	url = https://github.com/danmarsden/moodle-mod_attendance.git
+	branch = MOODLE_38_STABLE
