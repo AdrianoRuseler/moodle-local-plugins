@@ -6,9 +6,7 @@
 
 ## To Do
  - https://github.com/dbauer-ets/moodle-qtype_formulas
- - https://moodle.org/plugins/atto_wiris
- - https://moodle.org/plugins/atto_wiris
- - https://moodle.org/plugins/tinymce_tiny_mce_wiris
+
 
 ## Plugins List
 
