@@ -150,3 +150,7 @@
 	path = moodle/local/sandbox
 	url = https://github.com/moodleuulm/moodle-local_sandbox.git
 	branch = MOODLE_310_STABLE
+[submodule "moodle/mod/attendance"]
+	path = moodle/mod/attendance
+	url = https://github.com/danmarsden/moodle-mod_attendance.git
+	branch = MOODLE_311_STABLE
