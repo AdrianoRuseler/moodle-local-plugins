@@ -2,10 +2,6 @@
 	path = moodle/local/adminer
 	url = https://github.com/grabs/moodle-local_adminer.git
 	branch = MOODLE_39_STABLE
-[submodule "moodle/local/sandbox"]
-	path = moodle/local/sandbox
-	url = https://github.com/moodleuulm/moodle-local_sandbox.git
-	branch = master
 [submodule "moodle/blocks/xp"]
 	path = moodle/blocks/xp
 	url = https://github.com/FMCorz/moodle-block_xp.git
