@@ -10,10 +10,6 @@
 	path = moodle/local/sandbox
 	url = https://github.com/moodleuulm/moodle-local_sandbox.git
 	branch = master
-[submodule "moodle/mod/attendance"]
-	path = moodle/mod/attendance
-	url = https://github.com/danmarsden/moodle-mod_attendance.git
-	branch = main
 [submodule "moodle/blocks/xp"]
 	path = moodle/blocks/xp
 	url = https://github.com/FMCorz/moodle-block_xp.git
