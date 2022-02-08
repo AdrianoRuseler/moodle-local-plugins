@@ -154,3 +154,7 @@
 	path = moodle/mod/attendance
 	url = https://github.com/danmarsden/moodle-mod_attendance.git
 	branch = MOODLE_38_STABLE
+[submodule "moodle/mod/bigbluebuttonbn"]
+	path = moodle/mod/bigbluebuttonbn
+	url = https://github.com/blindsidenetworks/moodle-mod_bigbluebuttonbn.git
+	branch = v2.4-stable
