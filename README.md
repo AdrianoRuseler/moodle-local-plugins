@@ -148,7 +148,7 @@ git submodule add -b V3.4.3+ https://github.com/jcrodriguez-dis/moodle-mod_vpl.g
 
 - https://github.com/academic-moodle-cooperation/moodle-mod_publication
 ```bash
-git submodule add -b MOODLE_310_STABLE https://github.com/academic-moodle-cooperation/moodle-mod_publication.git mod/publication
+git submodule add -b MOODLE_311_STABLE https://github.com/academic-moodle-cooperation/moodle-mod_publication.git mod/publication
 ```
 
 - https://moodle.org/plugins/atto_justify
