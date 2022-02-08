@@ -198,6 +198,7 @@ git submodule add -b MOODLE_310_STABLE https://github.com/moodleuulm/moodle-loca
 ```
 
 - https://moodle.org/plugins/availability_relativedate
+- https://github.com/ewallah/moodle-availability_relativedate
 ```bash
 git submodule add -b main https://github.com/ewallah/moodle-availability_relativedate.git availability/condition/relativedate
 ```
